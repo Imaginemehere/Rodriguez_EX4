@@ -1,6 +1,29 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
+
+
+
+
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -17,7 +40,7 @@
   --border-color: hsl(0, 0%, 94%);
 
   /*========== Font and typography ==========*/
-  --body-font: 'Roboto', sans-serif;
+  --body-font: 'newroman', sans-serif;
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -77,6 +100,7 @@ input {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
+
 
 body {
   margin: 0;
@@ -157,7 +181,7 @@ body.dark-theme {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container {
+.container{
   max-width: 1024px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
@@ -206,6 +230,19 @@ body.dark-theme {
   z-index: var(--z-fixed);
   /*For animation dark mode*/
   transition: .4s;
+}
+
+.vid-bg{
+width: 57%;
+height: 59%;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+justify-self: flex-end;
+border-radius: 40px;
+margin: auto;
+aspect-ratio: 16/9;
+box-shadow: 0 5px 30px hsla(0, 0%, 0%, 0.3);
 }
 
 .nav {
@@ -304,7 +341,7 @@ body.dark-theme {
 }
 
 /*=============== HOME ===============*/
-.home__container {
+.home__container{
   position: relative;
   row-gap: 2.5rem;
 }
@@ -455,7 +492,7 @@ body.dark-theme {
 }
 
 .featured__card:hover {
-  box-shadow: 0 12px 32px hsla(0, 0%, 20%, .1);
+  box-shadow: 0 3px 32px hsla(0, 0%, 100%, 0.1);
   padding: 2rem 0 3rem 0;
 }
 
@@ -897,6 +934,7 @@ body.dark-theme {
   bottom: -30%;
   background-color: var(--container-color);
   box-shadow: 0 4px 12px hsla(0, 0%, 20%, .1);
+  border-radius: 30px;
   display: inline-flex;
   padding: .25rem;
   z-index: var(--z-tooltip);
@@ -1431,3 +1469,4 @@ body.dark-theme {
     right: 3rem;
   }
 }
+
